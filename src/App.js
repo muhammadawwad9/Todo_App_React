@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="text-center">Todo List</h1>
+        <h1 className="text-center mt-2">Todo List</h1>
       </header>
       <div class="container mt-5">
         <Form
