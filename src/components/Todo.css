@@ -2,3 +2,8 @@
   text-decoration: line-through !important;
   opacity: 0.5;
 }
+
+.list-group-item {
+  word-wrap: break-word;
+  min-width: 260px;
+}

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import uuid from "react-uuid";
+import "./Form.css";
 
 const Form = ({ setInput, input, setTodos, todos, setFilter }) => {
   const handleInputChange = (e) => {
@@ -37,10 +38,11 @@ const Form = ({ setInput, input, setTodos, todos, setFilter }) => {
         value={input}
         ref={inputRef}
       />
-      <button className="btn btn-primary mx-1" onClick={submitTodoHandler}>
-        Add todo
-      </button>
-      <div className="mx-1">
+
+      <div className=" div-2 mx-1 d-flex">
+        <button className="btn btn-primary mx-1" onClick={submitTodoHandler}>
+          Add todo
+        </button>
         <select className="custom-select-lg" onChange={changeFilter}>
           <option value="all">All</option>
           <option value="completed">Completed</option>

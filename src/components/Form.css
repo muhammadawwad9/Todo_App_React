@@ -1,0 +1,14 @@
+@media all and (max-width: 780px) {
+  form {
+    flex-direction: column;
+  }
+
+  .div-2 {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.form-control {
+  min-width: 260px;
+}

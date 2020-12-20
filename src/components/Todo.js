@@ -19,18 +19,22 @@ const Todo = ({ todo, setTodos }) => {
     });
   };
   return (
-    <div className="d-flex justify-content-center w-50 mx-auto mt-3 ">
+    <div className=" todo d-flex flex-column align-items-center mx-auto mt-3 ">
       <li
-        className={`list-group-item w-50 ${todo.completed ? "completed" : ""}`}
+        className={`list-group-item text-center w-50 ${
+          todo.completed ? "completed" : ""
+        }`}
       >
         {todo.text}
       </li>
-      <button className="btn btn-danger" onClick={deleteHandler}>
-        Delete
-      </button>
-      <button className="btn btn-success" onClick={completeHandler}>
-        Complete
-      </button>
+      <div className="delete-edit-btn d-flex justify-content-center">
+        <button className="btn btn-danger" onClick={deleteHandler}>
+          Delete
+        </button>
+        <button className="btn btn-success" onClick={completeHandler}>
+          Complete
+        </button>
+      </div>
     </div>
   );
 };
