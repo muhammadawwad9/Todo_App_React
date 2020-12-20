@@ -6,6 +6,8 @@ const Form = ({ setInput, input, setTodos, todos, setFilter }) => {
     setInput(e.target.value);
   };
 
+  const inputRef = useRef(null);
+
   const submitTodoHandler = (e) => {
     e.preventDefault();
     if (input.trim() !== "") {
@@ -14,13 +16,13 @@ const Form = ({ setInput, input, setTodos, todos, setFilter }) => {
     } else {
       alert("Enter a todo ");
     }
+    inputRef.current.focus();
   };
 
   const changeFilter = (e) => {
     setFilter(e.target.value);
   };
 
-  const inputRef = useRef(null);
   //auto focus on the add field
   useEffect(() => {
     inputRef.current.focus();
