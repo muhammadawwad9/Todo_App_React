@@ -27,7 +27,7 @@ const Todo = ({ todo, setTodos }) => {
       >
         {todo.text}
       </li>
-      <div className="delete-edit-btn d-flex justify-content-center">
+      <div className="delete-edit-btn d-flex justify-content-center mt-2">
         <button className="btn btn-danger" onClick={deleteHandler}>
           Delete
         </button>
