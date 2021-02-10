@@ -28,10 +28,10 @@ const Todo = ({ todo, setTodos }) => {
         {todo.text}
       </li>
       <div className="delete-edit-btn d-flex justify-content-center mt-2">
-        <button className="btn btn-danger" onClick={deleteHandler}>
+        <button className="btn btn-danger m-1" onClick={deleteHandler}>
           Delete
         </button>
-        <button className="btn btn-success" onClick={completeHandler}>
+        <button className="btn btn-success m-1" onClick={completeHandler}>
           Complete
         </button>
       </div>
