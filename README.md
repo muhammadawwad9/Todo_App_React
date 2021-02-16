@@ -7,5 +7,3 @@
 
 - React JS (hooks)
 - Bootstrap
-- Local Storage
-
